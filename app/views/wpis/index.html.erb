@@ -1,0 +1,27 @@
+
+
+  
+  <% for wpis in @ekscytacje %>
+
+<div>
+   
+<h2> <%= link_to wpis.title, wpi_path(wpis) %> </h2>
+  
+  <%= link_to "edytuj",edit_wpi_path(wpis) %>
+
+
+</div>
+<% end %>
+
+
+<img src="https://pbs.twimg.com/profile_images/1506394191/railsgirls-heart.png" class="serduszko">
+<img src="https://pbs.twimg.com/profile_images/1506394191/railsgirls-heart.png" class="serduszko">
+<img src="https://pbs.twimg.com/profile_images/1506394191/railsgirls-heart.png" class="serduszko">
+
+<div>
+  <h3>
+<%= link_to "dodaj wpis",new_wpi_path %>
+
+  </h3>
+</div>
+
